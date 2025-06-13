@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Vinted Slowed",
+  "version": "1.0",
+  "description": "Remove fast fashion brands from search results",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*.vinted.co.uk/*"],
+      "run_at": "document_idle"
+    }
+  ]
+}
