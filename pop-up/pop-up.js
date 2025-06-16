@@ -1,11 +1,21 @@
-const brandBox1 = document.getElementById("brand1")
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("hey diva")
 
-console.log("hey girl")
+  const brandCheckboxes = document.querySelectorAll("input[type=checkbox]")
 
-brandBox1.addEventListener("change", function () {
-  if (this.checked) {
-    console.log("shein checked")
-  } else {
-    console.log("shein not checked")
-  }
+  console.log(brandCheckboxes)
+
+  let brandsToFilter = []
+
+  brandCheckboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      brandsToFilter = Array.from(brandCheckboxes)
+        .filter((i) => i.checked)
+        .map((i) => i.value)
+      console.log(brandsToFilter)
+      chrome.runtime.sendMessage({
+        data: brandsToFilter,
+      })
+    })
+  })
 })

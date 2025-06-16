@@ -1,4 +1,8 @@
-function checkBrands() {
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  console.log("Received in content script:", request.data)
+})
+
+function checkBrands(brandsToFilter) {
   const items = Array.from(document.querySelectorAll("div.feed-grid__item"))
 
   items.forEach((item) => {
