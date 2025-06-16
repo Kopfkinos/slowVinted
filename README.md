@@ -14,11 +14,13 @@ The project is also being used as a way to familiarize myself with the Chrome Ex
 
 ## State of the Project
 
-(13/06/25)
+(16/06/25)
 
-- Basic functionality is working: brands to be filtered out have been hard coded, the script then searches the Dom for any items for these brands, and hides these from view.
+- Basic functionality of pop-up is working. The user is able to select the brand they wish to filter out from a hard-coded list via a checkbox in a pop-up menu that appears upon clicking on the extension.
 
-- The project has not yet been released onto the Chrome Extension store. I wish to implement a few more basic features, such as a basic UI and options for the user to select which brands they wish to filter out.
+--> The pop-up does not yet save any ticked boxes to the browser, so all boxes appear unticked when the pop-up is reopened. This saving of state will be the next feature to be implemented.
+
+The project has not yet been released onto the Chrome Extension store. I wish to implement a few more basic features, such as a basic UI and options for the user to select which brands they wish to filter out.
 
 ## Contributing
 
