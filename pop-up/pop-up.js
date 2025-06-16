@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const brandCheckboxes = document.querySelectorAll("input[type=checkbox]")
 
-  console.log(brandCheckboxes)
-
   let brandsToFilter = []
 
   brandCheckboxes.forEach((checkbox) => {
@@ -13,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
         .filter((i) => i.checked)
         .map((i) => i.value)
       console.log(brandsToFilter)
+      if (brandsToFilter.includes("Shein")) {
+        brandsToFilter.push("Shein Curve")
+      }
       chrome.runtime.sendMessage({
         data: brandsToFilter,
       })
