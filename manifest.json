@@ -3,7 +3,7 @@
   "name": "Vinted Slowed",
   "version": "1.0",
   "description": "Remove fast fashion brands from search results",
-  "permission": ["storage"],
+  "permissions": ["storage"],
   "action": {
     "default_popup": "./pop-up/pop-up.html"
   },
