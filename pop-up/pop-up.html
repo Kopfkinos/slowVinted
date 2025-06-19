@@ -2,39 +2,43 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="../bulma.min.css" />
+    <link rel="stylesheet" href="main.css" />
     <script src="pop-up.js"></script>
   </head>
 
-  <body style="overflow:hidden; background-color: #037783;">
-    <div class="container m-4">
-      <h1 class="title">slowVinted</h1>
-      <p class="has-text-white"> Select the brands you want to filter out of search results.</p>
-    </div>
-    <div class="container m-4">
-      <div class="checkboxes">
-        <label class="checkbox has-text-white" for="brand1">
+  <body>
+    <div class="main-container">
+      <header> 
+      <h1>slowVinted</h1>
+      </header>
+      <div class="options-container">
+      <p> Select the fast-fashion brands you want to filter out of Vinted search results.</p>
+    <div class="checkbox-container">
+        <label class="checkbox" for="brand1">
           <input type="checkbox" id="brand1" name="brand" value="Shein" />
           Shein</label
         >
-        <label class="checkbox has-text-white" for="brand2">
+        </div>
+        <div class="checkbox-container">
+        <label class="checkbox" for="brand2">
           <input type="checkbox" id="brand2" name="brand" value="Temu" />
           Temu</label
         >
       </div>
-      </div>
-      <div class="container m-4">
-        <div class="checkboxes">
-        <label class="checkbox has-text-white" for="brand3">
+      <div class="checkbox-container">
+        <label class="checkbox" for="brand3">
           <input type="checkbox" id="brand3" name="brand" value="Primark" />
           Primark</label
         >
-        <label class="checkbox has-text-white" for="brand4">
+        </div>
+        <div class="checkbox-container">
+        <label class="checkbox" for="brand4">
           <input type="checkbox" id="brand4" name="brand" value="ASOS" />
           ASOS</label
         >
         </div>
       </div>
+    </div>
     </div>
   </body>
 </html>
