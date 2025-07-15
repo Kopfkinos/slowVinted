@@ -8,7 +8,8 @@ function checkBrands(brandsToFilter) {
     console.log(brandName)
 
     if (brandsToFilter.includes(brandName)) {
-      item.style.display = "none"
+      // item.style.display = "none"
+      item.remove()
     }
   })
 }
