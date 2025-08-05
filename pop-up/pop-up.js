@@ -1,5 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("hey diva")
+  const enableButton = document.querySelector("#enable-button")
+  enableButton.addEventListener("click", () => {
+    console.log(enableButton.textContent)
+    if (enableButton.textContent === "ENABLE") {
+      enableButton.textContent = "DISABLE"
+      enableButton.classList.add("enabled")
+    } else {
+      enableButton.textContent = "ENABLE"
+      enableButton.classList.remove("enabled")
+    }
+  })
 
   const brandCheckboxes = document.querySelectorAll("input[type=checkbox]")
 

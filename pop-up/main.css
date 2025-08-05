@@ -7,9 +7,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   font-size: 15px;
-  width: 250px;
+  width: 200px;
   max-height: 606px;
+  padding: 10px;
 }
 
 p,
@@ -32,6 +34,27 @@ img {
   height: 50px;
   width: auto;
   margin-left: 5px;
+}
+
+.enable-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#enable-button {
+  width: 100%;
+  height: 41px;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  transition: all 0.2s;
+}
+
+.enabled {
+  background-color: #0398a8;
 }
 
 .options-container {
